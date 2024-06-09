@@ -38,13 +38,13 @@ Once the necessary software has been installed, open the project in a container 
 
 Once your IDE has settled out and all of the dependencies have auto-installed, you should be able to set a breakpoint in main.go and step through the syntax examples.
 
-## Syntax improvements
+## Syntax additions
 
 The challenge is to imagine C++ like syntax improvements while maintaining backward compatibility with idiomatic golang.
 
 This custom compiler adds class constructor semantics to allow for less developer toil and provide greater efficiency on complex structural composition.
 
-You can emulate a class inheritance hierarchy while not getting tripped up on virtual methods or dispatch tables.  
+You can emulate a class inheritance hierarchy while not getting tripped up on virtual methods or dispatch tables.
 
 Also added is Operator Overloading semantics.  You can define new operators and also define their behavior.  Included are both array [] and bracket {} syntax.  Look at the sample code for examples.
 
@@ -56,7 +56,11 @@ If you have a syntax construct that fails to compile, copy the code into a small
 
 I will enjoy reviewers coming up with syntactical use cases I did not think of.
 
-And if for some reason, you would like to see a feature added to the compiler that you know will not be accepted by the larger community, feel free to open an issue and we can discuss it.
+And if for some reason, you would like to sponsor a feature added to the compiler that you know will not be accepted by the larger community, feel free to open an issue and I will review it as soon as I have some free cycles.
+
+## Caveat
+
+A bug that you do not need to report is that I need to synchronize the golang language server with the updated syntax additions so the Visual Studio Code IDE does not report warnings and errors that actually do not exist.
 
 ## Road Map
 
