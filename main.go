@@ -5,7 +5,9 @@ package main
 
 //TODO: Modify the go language server so that VS Code does not report an IDENT or ILLEGAL warnings/errors
 //in the IDE UI.  The editor is being given incorrect syntax information from the golang language server
-	
+
+//The AtSign @ is used as our identifier for special operator syntax declarations
+
 type ginterface interface {
 	@(parm int) *gstruct
 	@[parms ...any] int
@@ -19,34 +21,48 @@ type gstruct struct {
 	fd int
 }
 
+//C++ Constructor
+//Only can define a single constructor.  Not multiple declarations with different parameter combinations
 func (g *gstruct)@(parm int) *gstruct {
 	return g
 }
 
+//Array Operator Overloading
 func (g *gstruct)@[parms ...any] int {
 	return 1
 }
 
+//If multiple versions of any operator syntax declarations are needed, use the
+// ...any variadic form and handle the different types passed in the implementation
+// You would lose compiler strict type checking, but you can implement strict type checking
+// in the implementation.  Life is full of tradeoffs.
+
+//Bracket Operator Overloading
 func (g *gstruct)@{parm int} int {
 	return 2
 }
 
+//Define + operator
 func (g *gstruct)@+(parm int) int {
 	return 3
 }
 
+//Define ++ operator
 func (g *gstruct)@++(parm1 int,parm2 int) int {
 	return parm1 + parm2
 }
 
+//Define = operator
 func (g *gstruct)@=(parm int) int {
 	return 4
 }
 
+//Traditional function calling semantics
 func (g *gstruct)fn(parm int) bool {
 	return true
 }
 
+//Define ^^ Operator
 func (g *gstruct)@^^() bool {
 	return true
 }
