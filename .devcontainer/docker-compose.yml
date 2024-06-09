@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  goplustesting:
+    image: ghcr.io/markdiener10/goplus-linux-arm64:latest
+    container_name: goplustestcontainer
+    volumes:
+      - ../..:/workspaces:cached      
+    command: sleep infinity

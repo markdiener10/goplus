@@ -1,0 +1,23 @@
+{
+	"name": "goplusarm64runtime",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "goplustesting",
+	"workspaceFolder": "/workspaces/${localWorkspaceFolderBasename}",
+	"postCreateCommand": "go version",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"golang.go"
+			]
+		}
+	},
+	"remoteEnv": {
+		"MYVAR": "VALUE-NEEDED-IN-PROGRAM",
+		"GOSUMDB": "off"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "latest"
+		}
+	}
+}

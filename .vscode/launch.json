@@ -1,0 +1,15 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "go",
+      "request": "launch",
+      "name": "Debug Compiler",
+      "program": "${fileDirname}",
+      "cwd": "${workspaceFolder}",
+      "args": [
+        "${workspaceFolder}"
+      ],
+    },
+  ]
+}

@@ -1,0 +1,6 @@
+{
+    "workbench.editor.showTabs": "multiple",
+    "editor.rename.enablePreview": true,
+    "workbench.editor.enablePreview": false,
+    "editor.suggest.preview": true
+}
