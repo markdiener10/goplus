@@ -1,12 +1,12 @@
 # goplus
 
-Custom golang compiler with language improvements including C++ extensions
+Custom golang compiler with language syntax improvements including some C++ semantics.
 
-After several years of writing, maintaining, and deploying go code to various customers, clients, and employers, the language needs to be liberated with essential tool chain improvements.
+After years of writing, maintaining, and deploying go code to various customers, clients, and employers, the language could use some essential syntax additions.
 
-The friendly and intelligent core go team at Google has limited bandwidth to implement features and those features require a long process of community discussion and review.  The intense scrutiny having to "convince" the committee verbally or in a community proposal would lead itself to never getting the features implemented.
+The friendly and intelligent core go team at Google has limited bandwidth to implement features and those features require a long process of community discussion and review.  The intense scrutiny having to "convince" the committee verbally or in a community proposal would lead itself to never getting the features implemented.  
 
-GoPlus is a backward compatible golang compiler but with very focused improvements made in the runtime and compiler to allow for some much desired syntactical preferences.
+GoPlus is a backward compatible golang compiler but with improvements made in the runtime and compiler to allow for some much desired syntactical preferences.
 
 ## Supported Platforms
 
