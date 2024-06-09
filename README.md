@@ -2,7 +2,7 @@
 
 Custom golang compiler toolchain with language syntax improvements including some C++ semantics.
 
-After years of writing, maintaining, and deploying go code to various customers, clients, and employers, the language could use some essential syntax additions.
+After years of writing, maintaining, and deploying go code to various clients and employers, the language could use some essential syntax additions.
 
 The friendly and intelligent core go team at Google has limited bandwidth to implement features and those features require a long process of community discussion and review.  The intense scrutiny having to "convince" the committee verbally or in a community proposal would lead itself to never getting the features implemented.  
 
