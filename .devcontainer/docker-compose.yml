@@ -3,6 +3,8 @@ version: '3.8'
 services:
   goplustesting:
     image: ghcr.io/markdiener10/goplus-linux-arm64:latest
+    #If you are deploying on AMD64, activate this image
+    #image: ghcr.io/markdiener10/goplus-linux-amd64:latest    
     container_name: goplustestcontainer
     volumes:
       - ../..:/workspaces:cached      
