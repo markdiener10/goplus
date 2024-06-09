@@ -44,7 +44,7 @@ The challenge is to imagine C++ like syntax improvements while maintaining backw
 
 This custom compiler adds class constructor semantics to allow for less developer toil and provide greater efficiency on complex structural composition.
 
-You can emulate a class inheritance hierarchy while not getting tripped up on virtual methods or dispatch tables.
+You can emulate a class inheritance hierarchy while not getting tripped up on virtual methods or dispatch v-tables.
 
 Also added is Operator Overloading semantics.  You can define new operators and also define their behavior.  Included are both array [] and bracket {} syntax.  Look at the sample code for examples.
 
