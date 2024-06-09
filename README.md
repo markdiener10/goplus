@@ -1,6 +1,6 @@
 # goplus
 
-Custom golang compiler with language syntax improvements including some C++ semantics.
+Custom golang compiler toolchain with language syntax improvements including some C++ semantics.
 
 After years of writing, maintaining, and deploying go code to various customers, clients, and employers, the language could use some essential syntax additions.
 
